@@ -29,7 +29,7 @@ To bypass the warning of unidentified developer, grant the permission by navigat
 - Shortens song name by hiding parentheticals.
 - Hover over song name to see full song name, artist, and album.
 - Control music playback with a click and hold on song name to play/pause, click and drag right to skip, click and drag left to go back.
-- Opening menu bar application shows album art, full song name, artist, and album
+- Opening menu bar application shows album art, full song name, artist, and album.
 - Alternatively, the song name can be hidden to reduce menu bar clutter.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/36305142/83363884-935fe000-a3ba-11ea-9c75-70fab77277ef.png" height="440" width="317"></p> 

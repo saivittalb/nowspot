@@ -9,7 +9,7 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/36305142/83363883-92c74980-a3ba-11ea-9396-3d7b83dab050.png" height="132" width="322"></p> 
 
-A macOS application which enables Spotify to be managed from the menubar by providing song notifications and playback control.
+A macOS application which enables Spotify to be managed from the menu bar by providing song notifications and playback control.
 
 ## Install
 

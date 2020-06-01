@@ -1,6 +1,6 @@
 //
-//  SpotinowTests.m
-//  SpotinowTests
+//  NowSpotTests.m
+//  NowSpotTests
 //
 //  Created by Sai Vittal B on 22/05/2020.
 //  Copyright © 2020 Sai Vittal B. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface SpotinowTests : XCTestCase
+@interface NowSpotTests : XCTestCase
 
 @end
 
-@implementation SpotinowTests
+@implementation NowSpotTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.

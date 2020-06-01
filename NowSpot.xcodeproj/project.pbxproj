@@ -13,8 +13,8 @@
 		B5DA5B78228BC6EF00900729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DA5B77228BC6EF00900729 /* Assets.xcassets */; };
 		B5DA5B7B228BC6EF00900729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DA5B79228BC6EF00900729 /* Main.storyboard */; };
 		B5DA5B7E228BC6EF00900729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA5B7D228BC6EF00900729 /* main.m */; };
-		B5DA5B89228BC6F000900729 /* NowspotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA5B88228BC6F000900729 /* NowspotTests.m */; };
-		B5DA5B94228BC6F000900729 /* NowspotUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA5B93228BC6F000900729 /* NowspotUITests.m */; };
+		B5DA5B89228BC6F000900729 /* NowSpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA5B88228BC6F000900729 /* NowSpotTests.m */; };
+		B5DA5B94228BC6F000900729 /* NowSpotUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA5B93228BC6F000900729 /* NowSpotUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		B5CA8D43228E0A82004097C7 /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
 		B5CA8D44228E0A82004097C7 /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
-		B5DA5B6E228BC6EE00900729 /* Nowspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nowspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DA5B6E228BC6EE00900729 /* NowSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NowSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DA5B71228BC6EE00900729 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5DA5B72228BC6EE00900729 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B5DA5B74228BC6EE00900729 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -47,11 +47,11 @@
 		B5DA5B7C228BC6EF00900729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DA5B7D228BC6EF00900729 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5DA5B7F228BC6EF00900729 /* Nowspot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nowspot.entitlements; sourceTree = "<group>"; };
-		B5DA5B84228BC6F000900729 /* NowspotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NowspotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5DA5B88228BC6F000900729 /* NowspotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NowspotTests.m; sourceTree = "<group>"; };
+		B5DA5B84228BC6F000900729 /* NowSpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NowSpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DA5B88228BC6F000900729 /* NowSpotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NowSpotTests.m; sourceTree = "<group>"; };
 		B5DA5B8A228BC6F000900729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5DA5B8F228BC6F000900729 /* NowspotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NowspotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5DA5B93228BC6F000900729 /* NowspotUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NowspotUITests.m; sourceTree = "<group>"; };
+		B5DA5B8F228BC6F000900729 /* NowSpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NowSpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DA5B93228BC6F000900729 /* NowSpotUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NowSpotUITests.m; sourceTree = "<group>"; };
 		B5DA5B95228BC6F000900729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,9 +90,9 @@
 		B5DA5B65228BC6EE00900729 = {
 			isa = PBXGroup;
 			children = (
-				B5DA5B70228BC6EE00900729 /* Nowspot */,
-				B5DA5B87228BC6F000900729 /* NowspotTests */,
-				B5DA5B92228BC6F000900729 /* NowspotUITests */,
+				B5DA5B70228BC6EE00900729 /* NowSpot */,
+				B5DA5B87228BC6F000900729 /* NowSpotTests */,
+				B5DA5B92228BC6F000900729 /* NowSpotUITests */,
 				B5DA5B6F228BC6EE00900729 /* Products */,
 				0929F1791A71ED56233536B6 /* Frameworks */,
 			);
@@ -101,14 +101,14 @@
 		B5DA5B6F228BC6EE00900729 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5DA5B6E228BC6EE00900729 /* Nowspot.app */,
-				B5DA5B84228BC6F000900729 /* NowspotTests.xctest */,
-				B5DA5B8F228BC6F000900729 /* NowspotUITests.xctest */,
+				B5DA5B6E228BC6EE00900729 /* NowSpot.app */,
+				B5DA5B84228BC6F000900729 /* NowSpotTests.xctest */,
+				B5DA5B8F228BC6F000900729 /* NowSpotUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B5DA5B70228BC6EE00900729 /* Nowspot */ = {
+		B5DA5B70228BC6EE00900729 /* NowSpot */ = {
 			isa = PBXGroup;
 			children = (
 				B5DA5B71228BC6EE00900729 /* AppDelegate.h */,
@@ -123,33 +123,33 @@
 				B5CA8D43228E0A82004097C7 /* PFMoveApplication.h */,
 				B5CA8D44228E0A82004097C7 /* PFMoveApplication.m */,
 			);
-			path = Nowspot;
+			path = NowSpot;
 			sourceTree = "<group>";
 		};
-		B5DA5B87228BC6F000900729 /* NowspotTests */ = {
+		B5DA5B87228BC6F000900729 /* NowSpotTests */ = {
 			isa = PBXGroup;
 			children = (
-				B5DA5B88228BC6F000900729 /* NowspotTests.m */,
+				B5DA5B88228BC6F000900729 /* NowSpotTests.m */,
 				B5DA5B8A228BC6F000900729 /* Info.plist */,
 			);
-			path = NowspotTests;
+			path = NowSpotTests;
 			sourceTree = "<group>";
 		};
-		B5DA5B92228BC6F000900729 /* NowspotUITests */ = {
+		B5DA5B92228BC6F000900729 /* NowSpotUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B5DA5B93228BC6F000900729 /* NowspotUITests.m */,
+				B5DA5B93228BC6F000900729 /* NowSpotUITests.m */,
 				B5DA5B95228BC6F000900729 /* Info.plist */,
 			);
-			path = NowspotUITests;
+			path = NowSpotUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5DA5B6D228BC6EE00900729 /* Nowspot */ = {
+		B5DA5B6D228BC6EE00900729 /* NowSpot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5DA5B98228BC6F000900729 /* Build configuration list for PBXNativeTarget "Nowspot" */;
+			buildConfigurationList = B5DA5B98228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowSpot" */;
 			buildPhases = (
 				B5DA5B6A228BC6EE00900729 /* Sources */,
 				B5DA5B6B228BC6EE00900729 /* Frameworks */,
@@ -159,14 +159,14 @@
 			);
 			dependencies = (
 			);
-			name = Nowspot;
+			name = NowSpot;
 			productName = "Spotify Now Playing";
-			productReference = B5DA5B6E228BC6EE00900729 /* Nowspot.app */;
+			productReference = B5DA5B6E228BC6EE00900729 /* NowSpot.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5DA5B83228BC6F000900729 /* NowspotTests */ = {
+		B5DA5B83228BC6F000900729 /* NowSpotTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5DA5B9B228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowspotTests" */;
+			buildConfigurationList = B5DA5B9B228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowSpotTests" */;
 			buildPhases = (
 				B5DA5B80228BC6F000900729 /* Sources */,
 				B5DA5B81228BC6F000900729 /* Frameworks */,
@@ -177,14 +177,14 @@
 			dependencies = (
 				B5DA5B86228BC6F000900729 /* PBXTargetDependency */,
 			);
-			name = NowspotTests;
+			name = NowSpotTests;
 			productName = "Spotify Now PlayingTests";
-			productReference = B5DA5B84228BC6F000900729 /* NowspotTests.xctest */;
+			productReference = B5DA5B84228BC6F000900729 /* NowSpotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B5DA5B8E228BC6F000900729 /* NowspotUITests */ = {
+		B5DA5B8E228BC6F000900729 /* NowSpotUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5DA5B9E228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowspotUITests" */;
+			buildConfigurationList = B5DA5B9E228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowSpotUITests" */;
 			buildPhases = (
 				B5DA5B8B228BC6F000900729 /* Sources */,
 				B5DA5B8C228BC6F000900729 /* Frameworks */,
@@ -195,9 +195,9 @@
 			dependencies = (
 				B5DA5B91228BC6F000900729 /* PBXTargetDependency */,
 			);
-			name = NowspotUITests;
+			name = NowSpotUITests;
 			productName = "Spotify Now PlayingUITests";
-			productReference = B5DA5B8F228BC6F000900729 /* NowspotUITests.xctest */;
+			productReference = B5DA5B8F228BC6F000900729 /* NowSpotUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5DA5B69228BC6EE00900729 /* Build configuration list for PBXProject "Nowspot" */;
+			buildConfigurationList = B5DA5B69228BC6EE00900729 /* Build configuration list for PBXProject "NowSpot" */;
 			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -240,9 +240,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5DA5B6D228BC6EE00900729 /* Nowspot */,
-				B5DA5B83228BC6F000900729 /* NowspotTests */,
-				B5DA5B8E228BC6F000900729 /* NowspotUITests */,
+				B5DA5B6D228BC6EE00900729 /* NowSpot */,
+				B5DA5B83228BC6F000900729 /* NowSpotTests */,
+				B5DA5B8E228BC6F000900729 /* NowSpotUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DA5B89228BC6F000900729 /* NowspotTests.m in Sources */,
+				B5DA5B89228BC6F000900729 /* NowSpotTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DA5B94228BC6F000900729 /* NowspotUITests.m in Sources */,
+				B5DA5B94228BC6F000900729 /* NowSpotUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,12 +306,12 @@
 /* Begin PBXTargetDependency section */
 		B5DA5B86228BC6F000900729 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5DA5B6D228BC6EE00900729 /* Nowspot */;
+			target = B5DA5B6D228BC6EE00900729 /* NowSpot */;
 			targetProxy = B5DA5B85228BC6F000900729 /* PBXContainerItemProxy */;
 		};
 		B5DA5B91228BC6F000900729 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5DA5B6D228BC6EE00900729 /* Nowspot */;
+			target = B5DA5B6D228BC6EE00900729 /* NowSpot */;
 			targetProxy = B5DA5B90228BC6F000900729 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -446,15 +446,15 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3WW6K9QZPN;
-				INFOPLIST_FILE = Nowspot/Info.plist;
+				INFOPLIST_FILE = NowSpot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saivittalb.nowspot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -467,15 +467,15 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3WW6K9QZPN;
-				INFOPLIST_FILE = Nowspot/Info.plist;
+				INFOPLIST_FILE = NowSpot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.saivittalb.nowspot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -496,7 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abeljohn.Spotify-Now-PlayingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nowspot.app/Contents/MacOS/Nowspot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NowSpot.app/Contents/MacOS/NowSpot";
 			};
 			name = Debug;
 		};
@@ -515,7 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abeljohn.Spotify-Now-PlayingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nowspot.app/Contents/MacOS/Nowspot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NowSpot.app/Contents/MacOS/NowSpot";
 			};
 			name = Release;
 		};
@@ -558,7 +558,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5DA5B69228BC6EE00900729 /* Build configuration list for PBXProject "Nowspot" */ = {
+		B5DA5B69228BC6EE00900729 /* Build configuration list for PBXProject "NowSpot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5DA5B96228BC6F000900729 /* Debug */,
@@ -567,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5DA5B98228BC6F000900729 /* Build configuration list for PBXNativeTarget "Nowspot" */ = {
+		B5DA5B98228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowSpot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5DA5B99228BC6F000900729 /* Debug */,
@@ -576,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5DA5B9B228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowspotTests" */ = {
+		B5DA5B9B228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowSpotTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5DA5B9C228BC6F000900729 /* Debug */,
@@ -585,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5DA5B9E228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowspotUITests" */ = {
+		B5DA5B9E228BC6F000900729 /* Build configuration list for PBXNativeTarget "NowSpotUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5DA5B9F228BC6F000900729 /* Debug */,

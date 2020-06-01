@@ -1,4 +1,4 @@
-# Nowspot
+# NowSpot
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![version](https://img.shields.io/badge/version-1.0-brightgreen)
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) 
@@ -13,7 +13,7 @@ A macOS application which enables Spotify to be managed from the menu bar by pro
 
 ## Install
 
-[Download latest release version](https://github.com/saivittalb/nowspot/releases/download/v1.0/Nowspot.app.zip).
+[Download latest release version](https://github.com/saivittalb/nowspot/releases/download/v1.1/NowSpot.app.zip).
 
 ###### Note 
 
@@ -32,7 +32,7 @@ To bypass the warning of unidentified developer, grant the permission by navigat
 - Opening menu bar application shows album art, full song name, artist, and album.
 - Alternatively, the song name can be hidden to reduce menu bar clutter.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/36305142/83363884-935fe000-a3ba-11ea-9c75-70fab77277ef.png" height="440" width="317"></p> 
+<p align="center"><img src="https://user-images.githubusercontent.com/36305142/83375899-177f8b00-a3ee-11ea-913b-606cef1a447c.png" height="441" width="294"></p> 
 
 ### Song notifications
 

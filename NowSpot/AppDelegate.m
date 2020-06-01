@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  Nowspot
+//  NowSpot
 //
 //  Created by Sai Vittal B on 22/05/2020.
 //  Copyright © 2020 Sai Vittal B. All rights reserved.
@@ -9,12 +9,12 @@
 #import "AppDelegate.h"
 #import "PFMoveApplication.h"
 
-static NSString * const NowspotPlayerStatePreferenceKey = @"NowspotPlayerState";
-static NSString * const NowspotNotificationStatePreferenceKey = @"NowspotNotificationState";
-static NSString * const NowspotMenuIconPreferenceKey = @"NowspotMenuIcon";
-static NSString * const NowspotStartAtLoginPreferenceKey = @"NowspotStartAtLogin";
-static NSString * const NowspotStartupInformationPreferenceKey = @"NowspotStartupInformation";
-static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
+static NSString * const NowSpotPlayerStatePreferenceKey = @"NowSpotPlayerState";
+static NSString * const NowSpotNotificationStatePreferenceKey = @"NowSpotNotificationState";
+static NSString * const NowSpotMenuIconPreferenceKey = @"NowSpotMenuIcon";
+static NSString * const NowSpotStartAtLoginPreferenceKey = @"NowSpotStartAtLogin";
+static NSString * const NowSpotStartupInformationPreferenceKey = @"NowSpotStartupInformation";
+static NSString * const NowSpotFirstLoginKey = @"NowSpotFirstLogin";
 
 @interface AppDelegate ()
 
@@ -43,14 +43,14 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
     PFMoveToApplicationsFolderIfNecessary();
     
     // show welcome screen
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:NowspotStartupInformationPreferenceKey]) {
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotStartupInformationPreferenceKey]) {
         [self helpDialog];
     }
     
     // enable notifications by default on first startup
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:NowspotFirstLoginKey]) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:NowspotFirstLoginKey];
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:NowspotNotificationStatePreferenceKey];
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotFirstLoginKey]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:NowSpotFirstLoginKey];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:NowSpotNotificationStatePreferenceKey];
     }
     
     // load menubar image
@@ -79,7 +79,7 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
     [self.statusItem.button addGestureRecognizer:pan];
     
     // initialize menu containers
-    NSMenu *mainMenu = [[NSMenu alloc] initWithTitle:@"Nowspot"];
+    NSMenu *mainMenu = [[NSMenu alloc] initWithTitle:@"NowSpot"];
     NSMenu *optionsSubmenu = [[NSMenu alloc] initWithTitle:@"Options"];
     NSMenuItem *optionsMenu = [[NSMenuItem alloc] initWithTitle:@"Options" action:nil keyEquivalent:@""];
     
@@ -90,18 +90,18 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
     self.albumMenuItem = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(launchSpotify) keyEquivalent:@""];
     
     // initialize options menu items
-    self.playerStateMenuItem = [[NSMenuItem alloc] initWithTitle:@"View play icon in menubar" action:[[NSUserDefaults standardUserDefaults] boolForKey:NowspotMenuIconPreferenceKey]?nil:@selector(togglePlayerState) keyEquivalent:@""];
+    self.playerStateMenuItem = [[NSMenuItem alloc] initWithTitle:@"View play icon in menubar" action:[[NSUserDefaults standardUserDefaults] boolForKey:NowSpotMenuIconPreferenceKey]?nil:@selector(togglePlayerState) keyEquivalent:@""];
     self.playerStateMenuItem.toolTip = @"Show a play icon in the menu bar when song is playing";
-    self.playerStateMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowspotPlayerStatePreferenceKey];
+    self.playerStateMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowSpotPlayerStatePreferenceKey];
     self.notificationStateMenuItem = [[NSMenuItem alloc] initWithTitle:@"Song notifications" action:@selector(toggleNotifications) keyEquivalent:@""];
     self.notificationStateMenuItem.toolTip = @"Get a notification when a new song comes on";
-    self.notificationStateMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowspotNotificationStatePreferenceKey];
+    self.notificationStateMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowSpotNotificationStatePreferenceKey];
     self.menuIconMenuItem = [[NSMenuItem alloc] initWithTitle:@"Hide text in menubar" action:@selector(toggleMenuIcon) keyEquivalent:@""];
     self.menuIconMenuItem.toolTip = @"Replaces song title with an icon to save space in the menu bar";
-    self.menuIconMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowspotMenuIconPreferenceKey];
+    self.menuIconMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowSpotMenuIconPreferenceKey];
     self.startAtLoginMenuItem = [[NSMenuItem alloc] initWithTitle:@"Start at login" action:@selector(toggleStartAtLogin) keyEquivalent:@""];
-    self.startAtLoginMenuItem.toolTip = @"Automatically launch Nowspot when starting up your computer";
-    self.startAtLoginMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowspotStartAtLoginPreferenceKey];
+    self.startAtLoginMenuItem.toolTip = @"Automatically launch NowSpot when starting up your computer";
+    self.startAtLoginMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowSpotStartAtLoginPreferenceKey];
     
     // set up menus
     [mainMenu addItem:self.artworkMenuItem];
@@ -119,7 +119,7 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
     [mainMenu addItemWithTitle:@"Donate" action:@selector(donate) keyEquivalent:@"d"];
     [mainMenu addItemWithTitle:@"Quit" action:@selector(quit) keyEquivalent:@"q"];
     [mainMenu addItem:[NSMenuItem separatorItem]];
-    [mainMenu addItemWithTitle:@"Nowspot" action:nil keyEquivalent:@""];
+    [mainMenu addItemWithTitle:@"NowSpot" action:nil keyEquivalent:@""];
     NSMenuItem *versionMenuItem = [[NSMenuItem alloc] initWithTitle:[NSString stringWithFormat:@"v%@ by Sai Vittal B", appVersion] action:nil keyEquivalent:@""];
     versionMenuItem.toolTip = [NSString stringWithFormat:@"Build %@", appBuild];
     [mainMenu addItem:versionMenuItem];
@@ -130,8 +130,8 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
         self.trackID = [[NSString alloc] initWithString:[[self executeAppleScript:@"get id of current track"] stringValue]];
         self.playing = [[[self executeAppleScript:@"get player state"] stringValue] isEqualToString:@"kPSP"];
         self.currentSongName = [[NSString alloc] initWithString:[[self executeAppleScript:@"get name of current track"] stringValue]];
-        if (![[NSUserDefaults standardUserDefaults] boolForKey:NowspotMenuIconPreferenceKey]){
-            self.statusItem.button.title = ([[NSUserDefaults standardUserDefaults] boolForKey:NowspotPlayerStatePreferenceKey] && self.playing)?[NSString stringWithFormat:@"%@ ►",[self shortenedSongName]]:[self shortenedSongName];
+        if (![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotMenuIconPreferenceKey]){
+            self.statusItem.button.title = ([[NSUserDefaults standardUserDefaults] boolForKey:NowSpotPlayerStatePreferenceKey] && self.playing)?[NSString stringWithFormat:@"%@ ►",[self shortenedSongName]]:[self shortenedSongName];
             if (self.statusItem.button.title != nil && ![self.statusItem.button.title isEqualToString:(@"")] )
                 self.statusItem.button.image = nil;
             else
@@ -162,7 +162,7 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
         self.artistMenuItem.title = @"Click here to open Spotify.";
         self.albumMenuItem.title = @"";
         self.playing = NO;
-        self.statusItem.button.toolTip = @"Nowspot";
+        self.statusItem.button.toolTip = @"NowSpot";
     }
     
     // set up notification center
@@ -182,19 +182,19 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
 {
     NSAlert *alert = [[NSAlert alloc] init];
     {
-        [alert setMessageText:@"Welcome to Nowspot!"];
-        [alert setInformativeText:@"Nowspot gives you easy access to see what song is playing in Spotify!\n\nHelp:\nClick on Nowspot up in the menu bar to see information about the song that's currently playing.\nClick and hold to play/pause, and click and drag right/left to skip/go back.\n\nOptions:\nView play icon in menu bar: Show a play icon in the menu bar when song is playing.\nSong notifications: Get a notification when a new song comes on.\nHide text in menu bar: Replaces song title with an icon to save space in the menu bar.\nStart at login: Automatically launch Nowspot when starting up your computer.\n\nDonate:\nI build everything for free and will continue to build free. It'd be great if you can help me by buying a coffee.\n\nEnjoy!\n- Sai Vittal B"];
+        [alert setMessageText:@"Welcome to NowSpot!"];
+        [alert setInformativeText:@"NowSpot gives you easy access to see what song is playing in Spotify!\n\nHelp:\nClick on NowSpot up in the menu bar to see information about the song that's currently playing.\nClick and hold to play/pause, and click and drag right/left to skip/go back.\n\nOptions:\nView play icon in menu bar: Show a play icon in the menu bar when song is playing.\nSong notifications: Get a notification when a new song comes on.\nHide text in menu bar: Replaces song title with an icon to save space in the menu bar.\nStart at login: Automatically launch NowSpot when starting up your computer.\n\nDonate:\nI build everything for free and will continue to build free. It'd be great if you can help me by buying a coffee.\n\nEnjoy!\n- Sai Vittal B"];
         [alert addButtonWithTitle:@"Okay"];
         [alert setShowsSuppressionButton:YES];
         NSCell *cell = [[alert suppressionButton] cell];
         [cell setControlSize:NSControlSizeSmall];
         [cell setFont:[NSFont systemFontOfSize:[NSFont smallSystemFontSize]]];
-        [cell setState:[[NSUserDefaults standardUserDefaults] boolForKey:NowspotStartupInformationPreferenceKey]];
+        [cell setState:[[NSUserDefaults standardUserDefaults] boolForKey:NowSpotStartupInformationPreferenceKey]];
         [alert runModal];
         if ([[alert suppressionButton] state] == NSControlStateValueOn)
-            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:NowspotStartupInformationPreferenceKey];
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:NowSpotStartupInformationPreferenceKey];
         else
-            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:NowspotStartupInformationPreferenceKey];
+            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:NowSpotStartupInformationPreferenceKey];
     }
 }
 
@@ -219,7 +219,7 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
         self.artistMenuItem.title = @"Click here to open Spotify.";
         self.albumMenuItem.title = @"";
         self.playing = NO;
-        self.statusItem.button.toolTip = @"Nowspot";
+        self.statusItem.button.toolTip = @"NowSpot";
     }
     else {
         self.playing = [[[aNotification userInfo] objectForKey:@"Player State"] isEqualToString:@"Playing"];
@@ -228,8 +228,8 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
             self.trackID = [[aNotification userInfo] objectForKey:@"Track ID"];
             [self setImage];
             self.currentSongName = [[aNotification userInfo] objectForKey:@"Name"];
-            if (![[NSUserDefaults standardUserDefaults] boolForKey:NowspotMenuIconPreferenceKey]){
-                self.statusItem.button.title = ([[NSUserDefaults standardUserDefaults] boolForKey:NowspotPlayerStatePreferenceKey] && self.playing)?[NSString stringWithFormat:@"%@ ►",[self shortenedSongName]]:[self shortenedSongName];
+            if (![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotMenuIconPreferenceKey]){
+                self.statusItem.button.title = ([[NSUserDefaults standardUserDefaults] boolForKey:NowSpotPlayerStatePreferenceKey] && self.playing)?[NSString stringWithFormat:@"%@ ►",[self shortenedSongName]]:[self shortenedSongName];
                 if (self.statusItem.button.title != nil && ![self.statusItem.button.title isEqualToString:(@"")] )
                     self.statusItem.button.image = nil;
                 else
@@ -242,8 +242,8 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
             [self showNotification];
         }
         else {
-            if (![[NSUserDefaults standardUserDefaults] boolForKey:NowspotMenuIconPreferenceKey])
-                self.statusItem.button.title = ([[NSUserDefaults standardUserDefaults] boolForKey:NowspotPlayerStatePreferenceKey] && self.playing)?[NSString stringWithFormat:@"%@ ►",[self shortenedSongName]]:[self shortenedSongName];
+            if (![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotMenuIconPreferenceKey])
+                self.statusItem.button.title = ([[NSUserDefaults standardUserDefaults] boolForKey:NowSpotPlayerStatePreferenceKey] && self.playing)?[NSString stringWithFormat:@"%@ ►",[self shortenedSongName]]:[self shortenedSongName];
 
         }
     }
@@ -251,25 +251,25 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
 
 - (void)togglePlayerState
 {
-    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:NowspotPlayerStatePreferenceKey] forKey:NowspotPlayerStatePreferenceKey];
-    self.playerStateMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowspotPlayerStatePreferenceKey];
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:NowspotPlayerStatePreferenceKey] && self.playing)
+    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotPlayerStatePreferenceKey] forKey:NowSpotPlayerStatePreferenceKey];
+    self.playerStateMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowSpotPlayerStatePreferenceKey];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:NowSpotPlayerStatePreferenceKey] && self.playing)
         self.statusItem.button.title = [NSString stringWithFormat:@"%@ ►", self.statusItem.button.title];
-    else if (![[NSUserDefaults standardUserDefaults] boolForKey:NowspotPlayerStatePreferenceKey] && self.playing)
+    else if (![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotPlayerStatePreferenceKey] && self.playing)
         self.statusItem.button.title = [self shortenedSongName];
 }
 
 - (void)toggleNotifications
 {
-    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:NowspotNotificationStatePreferenceKey] forKey:NowspotNotificationStatePreferenceKey];
-    self.notificationStateMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowspotNotificationStatePreferenceKey];
+    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotNotificationStatePreferenceKey] forKey:NowSpotNotificationStatePreferenceKey];
+    self.notificationStateMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowSpotNotificationStatePreferenceKey];
 }
 
 - (void)toggleMenuIcon
 {
-    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:NowspotMenuIconPreferenceKey] forKey:NowspotMenuIconPreferenceKey];
-    self.menuIconMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowspotMenuIconPreferenceKey];
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:NowspotMenuIconPreferenceKey]) {
+    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotMenuIconPreferenceKey] forKey:NowSpotMenuIconPreferenceKey];
+    self.menuIconMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowSpotMenuIconPreferenceKey];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:NowSpotMenuIconPreferenceKey]) {
         self.playerStateMenuItem.action = nil;
         self.statusItem.button.title = @"";
         self.statusItem.button.image = self.menubarImage;
@@ -278,21 +278,21 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
         self.playerStateMenuItem.action = @selector(togglePlayerState);
         if ([self.currentSongName length]){
             self.statusItem.button.image = nil;
-            self.statusItem.button.title = ([[NSUserDefaults standardUserDefaults] boolForKey:NowspotPlayerStatePreferenceKey] && self.playing)?[NSString stringWithFormat:@"%@ ►",[self shortenedSongName]]:[self shortenedSongName];
+            self.statusItem.button.title = ([[NSUserDefaults standardUserDefaults] boolForKey:NowSpotPlayerStatePreferenceKey] && self.playing)?[NSString stringWithFormat:@"%@ ►",[self shortenedSongName]]:[self shortenedSongName];
         }
     }
 }
 
 - (void)toggleStartAtLogin
 {
-    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:NowspotStartAtLoginPreferenceKey] forKey:NowspotStartAtLoginPreferenceKey];
-    self.startAtLoginMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowspotStartAtLoginPreferenceKey];
+    [[NSUserDefaults standardUserDefaults] setBool:![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotStartAtLoginPreferenceKey] forKey:NowSpotStartAtLoginPreferenceKey];
+    self.startAtLoginMenuItem.state = [[NSUserDefaults standardUserDefaults] boolForKey:NowSpotStartAtLoginPreferenceKey];
     [self setLoginItem];
 }
 
 - (void) setLoginItem
 {
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:NowspotStartAtLoginPreferenceKey])
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:NowSpotStartAtLoginPreferenceKey])
         [self enableLoginItem];
     else
         [self disableLoginItem];
@@ -306,13 +306,13 @@ static NSString * const NowspotFirstLoginKey = @"NowspotFirstLogin";
 
 - (NSAppleEventDescriptor *)disableLoginItem
 {
-    NSAppleScript *script = [[NSAppleScript alloc] initWithSource:@"tell application \"System Events\" to delete login item \"Nowspot\""];
+    NSAppleScript *script = [[NSAppleScript alloc] initWithSource:@"tell application \"System Events\" to delete login item \"NowSpot\""];
     return [script executeAndReturnError:NULL];
 }
 
 - (void)showNotification
 {
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:NowspotNotificationStatePreferenceKey])
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:NowSpotNotificationStatePreferenceKey])
         return;
     [[NSUserNotificationCenter defaultUserNotificationCenter] removeAllDeliveredNotifications];
     

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B5DA5B6D228BC6EE00900729"
-               BuildableName = "Nowspot.app"
-               BlueprintName = "Nowspot"
+               BuildableName = "NowSpot.app"
+               BlueprintName = "NowSpot"
                ReferencedContainer = "container:Nowspot.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B5DA5B6D228BC6EE00900729"
-            BuildableName = "Nowspot.app"
-            BlueprintName = "Nowspot"
+            BuildableName = "NowSpot.app"
+            BlueprintName = "NowSpot"
             ReferencedContainer = "container:Nowspot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B5DA5B6D228BC6EE00900729"
-            BuildableName = "Nowspot.app"
-            BlueprintName = "Nowspot"
+            BuildableName = "NowSpot.app"
+            BlueprintName = "NowSpot"
             ReferencedContainer = "container:Nowspot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "B5DA5B6D228BC6EE00900729"
                BuildableName = "NowSpot.app"
                BlueprintName = "NowSpot"
-               ReferencedContainer = "container:Nowspot.xcodeproj">
+               ReferencedContainer = "container:NowSpot.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "B5DA5B6D228BC6EE00900729"
             BuildableName = "NowSpot.app"
             BlueprintName = "NowSpot"
-            ReferencedContainer = "container:Nowspot.xcodeproj">
+            ReferencedContainer = "container:NowSpot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "B5DA5B6D228BC6EE00900729"
             BuildableName = "NowSpot.app"
             BlueprintName = "NowSpot"
-            ReferencedContainer = "container:Nowspot.xcodeproj">
+            ReferencedContainer = "container:NowSpot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

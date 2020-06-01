@@ -23,14 +23,14 @@
 			containerPortal = B5DA5B66228BC6EE00900729 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B5DA5B6D228BC6EE00900729;
-			remoteInfo = "Spotify Now Playing";
+			remoteInfo = "NowSpot";
 		};
 		B5DA5B90228BC6F000900729 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5DA5B66228BC6EE00900729 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B5DA5B6D228BC6EE00900729;
-			remoteInfo = "Spotify Now Playing";
+			remoteInfo = "NowSpot";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -160,7 +160,7 @@
 			dependencies = (
 			);
 			name = NowSpot;
-			productName = "Spotify Now Playing";
+			productName = "NowSpot";
 			productReference = B5DA5B6E228BC6EE00900729 /* NowSpot.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -178,7 +178,7 @@
 				B5DA5B86228BC6F000900729 /* PBXTargetDependency */,
 			);
 			name = NowSpotTests;
-			productName = "Spotify Now PlayingTests";
+			productName = "NowSpotTests";
 			productReference = B5DA5B84228BC6F000900729 /* NowSpotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -196,7 +196,7 @@
 				B5DA5B91228BC6F000900729 /* PBXTargetDependency */,
 			);
 			name = NowSpotUITests;
-			productName = "Spotify Now PlayingUITests";
+			productName = "NowSpotUITests";
 			productReference = B5DA5B8F228BC6F000900729 /* NowSpotUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -488,7 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8GW2FFNAG;
-				INFOPLIST_FILE = "Spotify Now PlayingTests/Info.plist";
+				INFOPLIST_FILE = "NowSpotTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -507,7 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8GW2FFNAG;
-				INFOPLIST_FILE = "Spotify Now PlayingTests/Info.plist";
+				INFOPLIST_FILE = "NowSpotTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -525,7 +525,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8GW2FFNAG;
-				INFOPLIST_FILE = "Spotify Now PlayingUITests/Info.plist";
+				INFOPLIST_FILE = "NowSpotUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -533,7 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abeljohn.Spotify-Now-PlayingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Spotify Now Playing";
+				TEST_TARGET_NAME = "NowSpot";
 			};
 			name = Debug;
 		};
@@ -543,7 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8GW2FFNAG;
-				INFOPLIST_FILE = "Spotify Now PlayingUITests/Info.plist";
+				INFOPLIST_FILE = "NowSpotUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -551,7 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abeljohn.Spotify-Now-PlayingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Spotify Now Playing";
+				TEST_TARGET_NAME = "NowSpot";
 			};
 			name = Release;
 		};

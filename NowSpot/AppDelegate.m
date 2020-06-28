@@ -200,7 +200,7 @@ static NSString * const NowSpotFirstLoginKey = @"NowSpotFirstLogin";
 
 - (void)donate
 {
-    NSURL *URL = [NSURL URLWithString:@"https://www.paypal.me/saivittalb33"];
+    NSURL *URL = [NSURL URLWithString:@"https://www.buymeacoffee.com/saivittalb"];
     [[NSWorkspace sharedWorkspace]openURL:URL];
 }
 
